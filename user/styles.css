@@ -1,0 +1,18 @@
+.pokePlay {
+	display: inline-grid;
+	grid-template-columns: auto auto auto auto auto;
+	margin-top: 10%;
+}
+
+.enemyPlay {
+	display: inline-grid;
+	grid-template-columns: auto auto auto auto auto;
+}
+
+.pokemon {
+	margin-left: 2vw;
+}
+
+.selected {
+	border: 1px solid green;
+}

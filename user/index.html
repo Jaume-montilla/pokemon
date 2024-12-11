@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>pokemon</title>
+	<link rel="stylesheet" href="styles.css" />
+	<script src="main.js" defer></script>
+</head>
+
+<body>
+	<h1>Pokemons</h1>
+	<div class="selector">
+		<p>Get your Pokemon</p>
+		<input type="number" id="poke_num" placeholder="10" />
+		<button id="getPokemon">Click</button>
+	</div>
+	<div class="enemyPlay" id="enemyPlay"></div>
+	<div class="pokePlay" id="pokePlay"></div>
+	<div class="info_continue" id="info_continue"></div>
+
+	<template id="template">
+		<article id="pokemon" class="pokemon">
+			<h2 class="title" id="name"></h2>
+			<img src="" alt="pokemon" id="info" />
+			<p class="atributes">hp / atack / defensa</p>
+			<p class="atributes" id="atributes"></p>
+		</article>
+	</template>
+</body>
+
+</html>
