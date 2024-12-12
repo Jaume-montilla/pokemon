@@ -1,3 +1,7 @@
+body {
+	background-color: lightyellow;
+}
+
 .pokePlay {
 	display: inline-grid;
 	grid-template-columns: auto auto auto auto auto;
@@ -10,9 +14,132 @@
 }
 
 .pokemon {
+	display: inline-grid;
+	grid-template-columns: auto auto auto auto auto;
+	margin-top: 10%;
+
+	width: 120px;
 	margin-left: 2vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+	background-color: #ffffff;
+}
+
+.pokemon.enemy {
+	background-color: #f7f7f7;
+	border-color: #f44336;
+}
+
+.pokemon .title {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.pokemon .atributes {
+	font-size: 0.9em;
+	color: #555;
+}
+
+.pokemon img {
+	width: 80%;
+}
+
+.pokemon:hover {
+	transform: scale(1.05);
 }
 
 .selected {
-	border: 1px solid green;
+	border: 2px solid green;
+}
+
+.pokemon.dead {
+	opacity: 0.5;
+}
+
+.pokemon.alive {
+	border-color: #4caf50;
+}
+
+.pokemon.enemy.alive {
+	border-color: #f44336;
+}
+
+#info_continue {
+	text-align: center;
+	font-size: 1.5em;
+	margin-top: 20px;
+}
+
+.winner-message {
+	display: none;
+	font-size: 2em;
+	color: #4caf50;
+	text-align: center;
+	padding: 20px;
+	background-color: rgba(0, 255, 0, 0.1);
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+.winner-message.active {
+	display: block;
+}
+
+#pokemonLogoContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5px;
+}
+
+.selector {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.selector p {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+
+.selector input {
+	padding: 10px;
+	width: 200px;
+	font-size: 1.2em;
+	border: 2px solid #4caf50;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	margin-bottom: 10px;
+	transition: border-color 0.3s ease;
+}
+
+.selector input:focus {
+	border-color: #ff5722;
+	outline: none;
+}
+
+.selector button {
+	padding: 10px 20px;
+	font-size: 1.2em;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	width: 220px;
+}
+
+.selector button:hover {
+	background-color: #388e3c;
 }
