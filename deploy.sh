@@ -6,12 +6,12 @@ if ! command -v node &>/dev/null; then
 fi
 cd pokemon/
 npm install
-npm run serve &
+npm run dev &
 echo "Servidor cliente 1 encendido"
-cd user/
+cd ../user/
 npm install
-npm run serve &
+npm run dev &
 echo "Servidor cliente 2 encendido"
-cd pokemon/src/pvp
+cd ../pokemon/src/pvp
 node connect.cjs
 echo "Servidor WebSocket encendido"
