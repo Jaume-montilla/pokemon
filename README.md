@@ -1,6 +1,6 @@
 # Pokémon Game Using WebSocket
 
-Este proyecto es un juego de Pokémon interactivo que utiliza WebSockets para la comunicación en tiempo real entre el servidor y el cliente. Los jugadores pueden elegir sus Pokémon, luchar contra un oponente controlado por el servidor o por otro jugador en línea, todo a través de una conexión WebSocket.
+Este proyecto es un juego de Pokémon interactivo que utiliza WebSockets para la comunicación en tiempo real entre el servidor y el cliente. Los jugadores pueden elegir sus Pokémon, luchar contra un oponente controlado por otro jugador, todo a través de una conexión WebSocket.
 
 ## Descripción
 
