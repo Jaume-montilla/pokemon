@@ -1,5 +1,4 @@
 #!/bin/bash
-
 if ! command -v node &>/dev/null; then
 	echo "Es necesario instalar node para esta aplicacion"
 	exit 1
